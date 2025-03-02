@@ -28,7 +28,7 @@ plugins {
     id("com.dorkbox.VersionUpdate") version "2.8"
     id("com.dorkbox.GradlePublish") version "1.22"
 
-    kotlin("jvm") version "1.9.0"
+    kotlin("jvm") version "1.8.20"
 }
 
 object Extras {
@@ -51,7 +51,7 @@ object Extras {
 GradleUtils.load("$projectDir/../../gradle.properties", Extras)
 GradleUtils.defaults()
 GradleUtils.compileConfiguration(JavaVersion.VERSION_1_8)
-GradleUtils.jpms(JavaVersion.VERSION_1_9)
+GradleUtils.jpms(JavaVersion.VERSION_1_8)
 
 licensing {
     license(License.APACHE_2) {
